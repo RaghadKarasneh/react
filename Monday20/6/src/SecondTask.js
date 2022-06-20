@@ -38,7 +38,6 @@ class SecondTask extends React.Component{
                 <h4>{like}</h4>
                 </div>
             ))}
-            <button onClick="ChangeColor">Change Color</button>
             </div>
         );
     }

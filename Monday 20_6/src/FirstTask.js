@@ -22,7 +22,7 @@ class FirstTask extends Component{
     render(){
         return (
             <div style={{margin:'50px'}}>
-               <h2 className='isred' id="color"> {this.state.count}</h2> 
+               <h2 id="color"> {this.state.count}</h2> 
                <button onClick={this.increase}> Add</button>
  
             </div>

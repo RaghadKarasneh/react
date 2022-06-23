@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 class TaskThreeToggle extends Component {
     constructor(props){
         super(props);
-        this.state = {isToggle: false, isRed: false};
+        this.state = {isToggle: true, isRed: true};
         this.handleClick = this.handleClick.bind(this);
         this.handleColor = this.handleColor.bind(this);
         // const

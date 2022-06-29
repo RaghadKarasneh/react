@@ -2,6 +2,7 @@ import './App.css';
 import Api from './Api';
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
+import axios from 'axios';
 import { Component } from 'react';
 // const responseFacebook = (response) => {
 //       console.log(response);
@@ -13,9 +14,7 @@ import { Component } from 'react';
 class App extends Component{
   constructor(props) {  
     super(props);  
-    this.state = {  
-  
-    };  
+    this.state = {};  
   }  
   signup(res) {  
     const responseFacebook = {  
@@ -27,16 +26,15 @@ class App extends Component{
   
     }  
 
-    debugger;  
+    // debugger;  
     axios.post('http://localhost:60200/Api/Login/SocialmediaData', responseFacebook)  
-      .then((result) => {  
-        let responseJson = result;  
+      .then((result) => {   
         console.log(result.data.name);  
         alert("data");  
         sessionStorage.setItem("userData", JSON.stringify(result));  
-        this.props.history.push('/Dashboard')  
       });  
   }; 
+  
    render() {  
   const responseFacebook = (response) => {  
           console.log(response);  

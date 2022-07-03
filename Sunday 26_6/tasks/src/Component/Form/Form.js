@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import HomePage from '../Home/Home';
-import "./form.css";
+
 
 class FormApp extends Component {
     constructor(props){

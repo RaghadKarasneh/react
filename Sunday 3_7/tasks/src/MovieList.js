@@ -1,6 +1,8 @@
 import React, {useState , useEffect} from 'react';
 import Movie from './Movie';
+import './App.css'
 import { Card } from 'react-bootstrap';
+import Col from 'react-bootstrap/Col';
 //4a2e78cbfcmsh08a2918f5e4e6d8p12960cjsn77e48775642c
 
 
@@ -20,11 +22,19 @@ import { Card } from 'react-bootstrap';
       return (
           <div className="App">
             <h1>Hello App Component</h1>
+            
+            <div className="box">
+            
             {popular.map(movie => {
-        return <Movie key={movie.id} movie={movie}/>;
+              
+        return (
+          
+        <Movie key={movie.id} movie={movie}/>
+       );
+      
       })}
          
-           
+            </div>
           </div>
         );
       };

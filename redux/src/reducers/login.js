@@ -25,16 +25,9 @@ const loginReducer=(state={error:''},action)=>{
             }else{
                 console.log(false);
             }
-            // if(user_info != ''){
-            //     window.location.href = "/Home";
-            // }else{
-            //     return {...state, error: 'Username/ email or password is invalid'}
-            // }
         default:
             return state;
-    }
-    
-    
+    }   
     
 }
 export default loginReducer;

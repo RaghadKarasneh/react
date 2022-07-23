@@ -1,12 +1,6 @@
 import './login.css';
-// import {useSelector,useDispatch } from 'react-redux';
-// import {username,email,password,confirmPass, signup, emailORUsername,login} from "./actions";
-
-
 function LoginAndReg() {
 
-    // const dispatch=useDispatch();
-    // const error=useSelector(state=>state.register);
     let user_info= sessionStorage.getItem("user_info");
     const info = user_info.split(' ');
     const email= info[0];
